@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">   <!-- th로 된거는 타임리프임-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>한국폴리텍 1대학</h1>
+    <h2 th:text="${'인공지능소프트웨어'}"></h2> <!-- th:text="${'인공지능소프트웨어'}" 표현식임-->
+</body>
+</html>
+
+<!--
+Thymeleaf는 다양한 속성을 사용하여 템플릿 엔진에 기능을 추가하고 동적 웹 페이지를 구현할 수 있도록 합니다.
+
+1. 기본 속성
+
+th:text: 엘리먼트 내부에 표현식의 결과를 텍스트로 출력합니다.
+th:value: 엘리먼트의 속성 값으로 표현식의 결과를 설정합니다.
+th:href: 앵커 태그의 href 속성 값으로 표현식의 결과를 설정합니다.
+th:if: 조건에 따라 엘리먼트를 출력하거나 숨깁니다.
+th:switch: 조건에 따라 엘리먼트 중 하나를 출력합니다.
+th:each: 반복문을 사용하여 리스트 데이터를 출력합니다.
+th:class: css속성을 적용하는데 사용
+2. 고급 속성
+
+th:object: 템플릿 내에서 객체를 참조하는 데 사용합니다.
+th:field: 폼 엘리먼트의 이름을 설정합니다.
+th:errors: 폼 엘리먼트의 오류 메시지를 출력합니다.
+th:fragment: 템플릿 조각을 삽입하는 데 사용합니다.
+th:layout: 템플릿 레이아웃을 설정하는 데 사용합니다.
+th:block: 템플릿 블록을 정의하는 데 사용합니다.
+-->

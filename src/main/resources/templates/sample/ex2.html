@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .target{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>hahaha</h1>
+    <ul>
+        <li th:each = "dto ,state : ${list}" th:class="${dto.sno % 5 ==0}?'target'"> <!-- if문-->
+            [[${state.count}]] ======== [[${dto}]]
+        </li>
+    </ul>
+
+
+    <ul>
+        <li th:each = "dto ,state : ${list}" th:class="${dto.sno % 5 ==0}?'target'"> <!-- if문-->
+            [[${state.count}]] ======== [[${dto}]]
+        </li>
+    </ul>
+    ===========================================================
+    <ul>
+<!--        <li th:each = "dto ,state : ${list}" >-->
+<!--            <span th:if="${dto.sno % 5 ==0}"  th:text="${'&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;'+dto.sno}"></span>-->
+<!--            <span th:unless="${dto.sno % 5 ==0}"  th:text="${dto.first}"></span>-->
+<!--        </li>-->
+        <li th:each = "dto ,state : ${list}" th:text="${dto.sno % 5 == 0} ? '---------------' + ${dto.sno} : ${dto.first}" > <!-- 삼항연산자-->
+        </li>
+    </ul>
+</body>
+</html>
+
+
