@@ -8,6 +8,7 @@
     <ul>
         <li th:each="dto : ${list}">
             [[${#numbers.formatInteger(dto.sno,7)}]] ===[[${#temporals.format(dto.regTime, 'yyyy/MM//dd hh:mm:ss a')}]]
+
         </li>
     </ul>
 
