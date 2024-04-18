@@ -70,7 +70,9 @@ public class SampleController {
 
     }
 
-    @GetMapping({"/ex3", "/exLayout1"})
+
+
+    @GetMapping({"/ex3", "/exLayout1","/exLayout2"})
     public  void ex3(){
 
     }
