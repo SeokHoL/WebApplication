@@ -72,7 +72,7 @@ public class SampleController {
 
 
 
-    @GetMapping({"/ex3", "/exLayout1","/exLayout2"})
+    @GetMapping({"/ex3", "/exLayout1","/exLayout2","/exTemplate"})
     public  void ex3(){
 
     }
